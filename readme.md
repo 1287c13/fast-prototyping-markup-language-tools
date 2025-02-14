@@ -51,11 +51,19 @@ TODO в будущих версиях сборщика планируется д
 ### elements\BPMN, elements\UI
 
 В каталоге содержатся модули, реализующие базовые элементы BPMN нотации:
-- bpmnEvent.js - событие
-- bpmnGateway.js - шлюз
-- bpmnTask.js - задача
-- bpmnPool.js - бассейн
-- bpmnDocArtifact.js - документ
+- BPMN\bpmnEvent.js - событие
+- BPMN\bpmnGateway.js - шлюз
+- BPMN\bpmnTask.js - задача
+- BPMN\bpmnPool.js - бассейн
+- BPMN\bpmnDocArtifact.js - документ
+- UI\checkbox1c.js - флаг / радиокнопка
+- UI\select1c.js - поле формы
+- UI\tab1c.js - вкладка
+- UI\table1c.js - таблица
+- UI\text.js - текст
+- UI\uncoloredButton1c.js - кнопка
+- UI\wrapperForm1c.js - форма
+- UI\yellowButton1c.js - кнопка с акцентом
 
 Для интеграции в приложение, каждый модуль элемента должен содержать 
 - функцию-рендерер, принимающую объект 'props' и возвращающую полностью готовый для вставки в документ 
@@ -67,9 +75,6 @@ html код элемента.
 
 Процесс общий для всех элементов (и для BPMN и для UI макетов). В описании упоминаются модули,
 описание которых отдельно приведено ниже.
-
-
-TODO перевести выдержку из старой документации ниже на русский язык
 
 To create a new element, you want to implement:
 
@@ -84,7 +89,7 @@ To create a new element, you want to implement:
 - you're done
 
 full example of adding new simple element may be found at commit # 77f4650 'text element added'. Flow is up to date 
-for beta version dev (2023-06-05)
+for beta version dev
 
 how it works: when element is added, it's renderer called with specified in call default props. If state changes,
 changesRegistered variable is set to true so the state will be parsed and sent to server. Parsing is implemented at
