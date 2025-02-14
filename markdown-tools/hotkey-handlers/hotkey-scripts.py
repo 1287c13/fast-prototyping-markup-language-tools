@@ -92,7 +92,6 @@ class ScriptHandler:
 
     if code[-1] != '\n':
       code += '\n'
-    # code.replace('\n', '')
 
     driver.execute_script(f'displaySchemeForGivenCode("{code_for_web}")')
     time.sleep(1)

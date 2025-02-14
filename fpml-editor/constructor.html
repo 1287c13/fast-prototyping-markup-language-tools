@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" class="remove-context-menu-onclick" style="
+            font-family: Arial, serif;
+            font-style: normal;
+            font-size: 15px;
+            color: black;
+            font-weight: 700;
+        "
+>
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>верно.макеты</title>
+    <link rel="shortcut icon" href="data:@file/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADMK/wAyLv8AMo7/ADPU/wAz+P8AM/j/ADPU/wAyiv8ANyr/ADMKAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADIk/wAyiv8AM/L/ADP//wAz//8AM///ADP//wAz//8AM///ADPw/wAzjP8AMyIAAAAAAAAAAAAAAAD/ADMi/wAzqv8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM/r/ADOq/wAyJAAAAAD/ADMK/wAzjP8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AMor/ADMK/wA3Kv8AM/D/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADPy/wAyLv8AMor/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AMo7/ADTU/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADPU/wAz+P8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+P8AM/j/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM/j/ADPU/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADTU/wAyjv8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAyiv8AMi7/ADPy/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz8P8ANyr/ADMK/wAziv8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AM4z/ADMKAAAAAP8AMiT/ADOq/wAz+v8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AM6r/ADMiAAAAAAAAAAAAAAAA/wAzIv8AM4z/ADPw/wAz//8AM///ADP//wAz//8AM///ADP//wAz8v8AM4r/ADIkAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADMK/wAxKv8AMor/ADPU/wAz+P8AM/j/ADPU/wAyjv8AMi7/ADMKAAAAAAAAAAAAAAAA+B8AAOAHAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADgBwAA+B8AAA==" type="image/x-icon">
+    <link rel="icon" href="data:@file/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADMK/wAyLv8AMo7/ADPU/wAz+P8AM/j/ADPU/wAyiv8ANyr/ADMKAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADIk/wAyiv8AM/L/ADP//wAz//8AM///ADP//wAz//8AM///ADPw/wAzjP8AMyIAAAAAAAAAAAAAAAD/ADMi/wAzqv8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM/r/ADOq/wAyJAAAAAD/ADMK/wAzjP8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AMor/ADMK/wA3Kv8AM/D/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADPy/wAyLv8AMor/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AMo7/ADTU/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADPU/wAz+P8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+P8AM/j/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM/j/ADPU/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADTU/wAyjv8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAyiv8AMi7/ADPy/wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz8P8ANyr/ADMK/wAziv8AM/r/ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AM4z/ADMKAAAAAP8AMiT/ADOq/wAz+v8AM///ADP//wAz//8AM///ADP//wAz//8AM///ADP//wAz+v8AM6r/ADMiAAAAAAAAAAAAAAAA/wAzIv8AM4z/ADPw/wAz//8AM///ADP//wAz//8AM///ADP//wAz8v8AM4r/ADIkAAAAAAAAAAAAAAAAAAAAAAAAAAD/ADMK/wAxKv8AMor/ADPU/wAz+P8AM/j/ADPU/wAyjv8AMi7/ADMKAAAAAAAAAAAAAAAA+B8AAOAHAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMADAADgBwAA+B8AAA==" type="image/x-icon">
+</head>
+<body
+    style="
+        background-color: #FFFFFF;
+        background-image: linear-gradient(0deg, transparent, transparent 99px, #f0f0f0 99px, #f0f0f0 99px),
+        linear-gradient(90deg, transparent, transparent 99px, #f0f0f0 99px, #f0f0f0 99px),
+        linear-gradient(0deg, transparent, transparent 49px, #f0f0f0 49px, #f0f0f0 49px),
+        linear-gradient(90deg, transparent, transparent 49px, #f0f0f0 49px, #f0f0f0 49px),
+        linear-gradient(0deg, transparent, transparent 9px, #f8f8f8 9px, #f8f8f8 9px),
+        linear-gradient(90deg, transparent, transparent 9px, #f8f8f8 9px, #f8f8f8 9px);
+        background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    "
+>
+    <div style="font-family: 'JetBrains Mono', serif; color: #FFFFFF; position: absolute;">.</div>
+    <div id="scroll-crutch" style="width: 3000px; height: 1000px; z-index: 0; position: absolute;
+                top: calc(120% + 1px); left: calc(120% + 1px);"></div>
+</body>
+<script src="elements/commonParts.js"></script>
+<script src="elements/arrowHandle.js"></script>
+<script src="elements/BPMN/bpmnPool.js"></script>
+<script src="elements/BPMN/bpmnEvent.js"></script>
+<script src="elements/BPMN/bpmnGateway.js"></script>
+<script src="elements/BPMN/bpmnTask.js"></script>
+<script src="elements/BPMN/bpmnDocArtifact.js"></script>
+<script src="elements/arrow.js"></script>
+<script src="elements/UI/yellowButton1c.js"></script>
+<script src="elements/UI/checkbox1c.js"></script>
+<script src="elements/UI/select1c.js"></script>
+<script src="elements/UI/text.js"></script>
+<script src="elements/UI/tab1c.js"></script>
+<script src="elements/UI/table1c.js"></script>
+<script src="elements/UI/uncoloredButton1c.js"></script>
+<script src="elements/UI/wrapperForm1c.js"></script>
+<script src="modules/contextMenu.js"></script>
+<script src="modules/API.js"></script>
+<script src="modules/keyManagement.js"></script>
+<script src="modules/mainMenu.js"></script>
+<script src="modules/main.js"></script>
+<script src="modules/stateManagement.js"></script>
+<script src="modules/tooltips.js"></script>
+<script src="modules/editor.js"></script>
+</html>
